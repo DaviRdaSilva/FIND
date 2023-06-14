@@ -2,14 +2,15 @@
 
 body {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 24px;
-position: relative;
-width: 100%;
-height: 100vh;
-margin: 0;
-background: #000000;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 24px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: #000000;
   font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -19,7 +20,8 @@ background: #000000;
   align-items: center;
   justify-content: center;
   width: 100%;
-height: 20vh;
+  height: 20vh;
+  gap: 10%;
 }
 
 .navBar img{
@@ -27,23 +29,143 @@ height: 20vh;
 }
 
 .texto_navBar{
-  margin-top: 8%;
-width: 35%;
-height: 100%;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 48px;
-align-self: center;
-text-align: center;
-color: #2569ED;
+  margin-top: 6%;
+}
+
+.texto_navBar a{
+  text-decoration: none;
+  width: 35%;
+  height: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  align-self: center;
+  text-align: center;
+  color: #2569ED;
 }
 
 .banner{
-  width: 1440px;
-height: 748px;
-flex: none;
-order: 1;
-flex-grow: 0;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  margin-top: 3%;
+  /* justify-content: center; */
+  flex-direction: column;
+  background-size: 100%;
+  background-image: url(../assets/imgs/domingo-familia-1.jpg);
+}
+
+.texto_slogan{
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 0;
+  width: 50%;
+  height: 261px;
+  left: 11px;
+  /* top: 113px; */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 77px;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(3, 8, 20, 0.305) 10.73%, #2569ED 55.52%, rgba(0, 1, 3, 0.315) 91.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo{
+  width: 500px;
+  height: 500px;
+  margin-top: 0;
+  margin-left: 7%;
+}
+
+.MVV{
+  display: flex;
+  width: 90%;
+  height: 80vh;
+  border-radius: 236px;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+  background: rgba(62, 37, 237, 0.29);
+}
+
+.card{
+  display: flex;
+  width: 15%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background: rgba(36, 98, 178, 0.6);
+  border: 1px solid #000000;
+  border-radius: 70px;
+  padding: 3%;
+  padding-top: 0;
+  padding-bottom: 1%;
+}
+
+.card h5{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.card p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-align: justify;
+  color: #000000;
+}
+
+.Manual_install{
+  display: flex;
+  width: 100%;
+  height: 200vh;
+  flex-direction: column;
+  color: rgb(36, 98, 178);
+}
+
+.Manual_install h1{
+  display: flex;
+  align-self: center;
+}
+
+.card_manual{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_manual h1{
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+  font-size: 50px;
+}
+
+.card_manual span{
+  margin: 10px;
+  width: fit-content;
+  height: fit-content;
+  border: red 1px solid;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 15px;
+  padding: 10px;
 }
