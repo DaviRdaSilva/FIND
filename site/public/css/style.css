@@ -257,13 +257,13 @@ body {
   height: fit-content;
 }
 
-.historia h1 span{
+.historia h1 span {
   font-size: 50px;
   margin-left: 10%;
   color: white;
 }
 
-.historia p{
+.historia p {
   text-align: justify;
   font-size: 20px;
   margin-left: 10%;
@@ -277,6 +277,81 @@ body {
 }
 
 .img_find_historia img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.titulo_faleConosco {
+  margin-top: 15%;
+  color: white;
+}
+
+.titulo_faleConosco span {
+  border-radius: 25px;
+  padding: 20px;
+  background: rgb(119, 0, 192);
+  background: linear-gradient(90deg, rgba(119, 0, 192, 1) 0%, rgba(65, 95, 220, 1) 60%, rgba(0, 212, 255, 1) 100%);
+}
+
+.container_faleConosco{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+}
+
+.card-form{
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 25px;
+  margin-top: 2%;
+  width: auto;
+  height: fit-content;
+  background-color:lightblue;
+}
+
+.formulario input{
+  padding-left: 10px;
+  border-radius: 25px;
+  border: 2px solid darkblue;
+  background: lightgray;
+  width: 95%;
+  height:25px
+}
+
+.button-form{
+  margin-left: 30%;
+  width: 130px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  background: darkblue;
+  color: white;
+}
+
+.mensagem{
+  margin-top:20px;
+  width: 300px;
+  height: 100px;
+}
+
+.formulario_img{
+  margin-top: -2%;
+  border-radius: 25px;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario_img img{
   border-radius: 25px;
   width: 100%;
 }
