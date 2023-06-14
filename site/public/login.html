@@ -118,22 +118,26 @@
                 emailServer: emailVar,
                 senhaServer: senhaVar
             })
-        }).then(function (resposta) {
+        }).then(function (resultadoAutenticar) {
             console.log("ESTOU NO THEN DO entrar()!")
 
-            if (resposta.ok) {
-                console.log(resposta);
+            if (resultadoAutenticar.ok) {
+                console.log(resultadoAutenticar);
 
-                resposta.json().then(json => {
+                resultadoAutenticar.json().then(json => {
                     console.log(json);
                     console.log(JSON.stringify(json));
-                    sessionStorage.EMAIL_USUARIO = json.email;
-                    sessionStorage.NOME_USUARIO = json.nome;
-                    sessionStorage.ID_USUARIO = json.id;
-                    sessionStorage.AQUARIOS = JSON.stringify(json.aquarios)
+
+
+                    sessionStorage.setItem("ID_USUARIO", json.ID);
+                    sessionStorage.NOME_USUARIO = json.NOME;
+                    sessionStorage.EMAIL_USUARIO = json.EMAIL;
+                    // sessionStorage. NOME_USUARIO = json.Nome;
+                    // sessionStorage. ID_USUARIO = json.idUsuario;
+                    // sessionStorage.AQUARIOS = JSON.stringify(json.aquarios)
 
                     setTimeout(function () {
-                        window.location = "./dashboard/cards.html";
+                        window.location = "dashboard/cards.html";
                     }, 1000); // apenas para exibir o loading
 
                 });
