@@ -20,26 +20,34 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 20vh;
-  gap: 10%;
+  height: 25vh;
+  gap: 6%;
+  position: fixed;
+  background-color: #00000095;
+  margin-top: 0%;
 }
 
 .navBar img{
+  width: 20%;
   margin-top: 5%;
 }
 
 .texto_navBar{
+  width: 35%;
   margin-top: 6%;
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
 }
 
 .texto_navBar a{
   text-decoration: none;
   width: 35%;
-  height: 100%;
+  height: max-content;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 48px;
   align-self: center;
   text-align: center;
@@ -50,7 +58,7 @@ body {
   display: flex;
   width: 100%;
   height: 80vh;
-  margin-top: 3%;
+  margin-top: 15%;
   /* justify-content: center; */
   flex-direction: column;
   background-size: 100%;
@@ -88,18 +96,19 @@ body {
 .MVV{
   display: flex;
   width: 90%;
-  height: 80vh;
+  height: max-content;
   border-radius: 236px;
   justify-content: center;
   align-items: center;
   gap: 8%;
   background: rgba(62, 37, 237, 0.29);
+  padding: 2%;
 }
 
 .card{
   display: flex;
   width: 15%;
-  height: 70%;
+  height: fit-content;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -108,30 +117,31 @@ body {
   border: 1px solid #000000;
   border-radius: 70px;
   padding: 3%;
-  padding-top: 0;
-  padding-bottom: 1%;
+  padding-top: 0%;
+  padding-bottom: 0%;
 }
 
-.card h5{
+.card h3{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 0;
 }
 
 .card p{
+  padding-top: 7%;
+  padding-bottom: 7%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-  text-align: center;
-  text-align: justify;
-  color: #000000;
+  text-align: start;
+  color: #ffffff;
 }
 
 .Manual_install{
@@ -145,6 +155,7 @@ body {
 .Manual_install h1{
   display: flex;
   align-self: center;
+  font-size: 60px;
 }
 
 .card_manual{
@@ -168,4 +179,9 @@ body {
   font-size: 30px;
   border-radius: 15px;
   padding: 10px;
+}
+
+.footer{
+  width: 100%;
+  height: 100vh;
 }
