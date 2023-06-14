@@ -208,7 +208,7 @@ body {
   margin-top: 5%;
 }
 
-.texto_navBar {
+.footer .texto_navBar {
   width: 35%;
   margin-top: 6%;
   display: flex;
@@ -216,7 +216,7 @@ body {
   gap: 3%;
 }
 
-.texto_navBar a {
+.footer .texto_navBar a {
   text-decoration: none;
   width: 35%;
   height: max-content;
@@ -230,12 +230,3 @@ body {
   color: #2569ed;
 }
 
-
-.body_login{
-  display: flex;
-  margin: 0;
-  background: #000000;
-  font-family: "Barlow", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.header{}
